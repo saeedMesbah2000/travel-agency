@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- home -->
+
+    <section id="home">
+      <img
+        id="logo"
+        src="./photo/travel-agency.svg"
+        alt="sorry we can't show you the image" />
+      <div id="head">
+        <h1>let us show you the way!</h1>
+        <p>you can see your dreams become true</p>
+        <div id="bott">
+          <a href="#"><span></span>know more</a>
+          <a href="#"><span></span>get start</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+
+    <section id="features">
+      <div class="text">
+        <p>FEATURES</p>
+        <h1>why chooses us</h1>
+      </div>
+
+      <div id="features-box">
+        <div id="feature">
+          <h1>Experienced staff</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quo,
+            repudiandae nobis facilis, nulla architecto veniam cupiditate in ea
+            fugiat voluptas doloremque error vel. Aut omnis dicta quaerat
+            officia labore.
+          </p>
+        </div>
+        <div id="feature-img">
+          <img
+            src="./photo/waterfall.jpg"
+            alt="sorry we can't show you the image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+
+    <section id="services">
+      <div class="text">
+        <p>SERVICES</p>
+        <h1>we provide better</h1>
+      </div>
+
+      <div class="service-box">
+        <div class="single-service">
+          <img src="./photo/pic1.jpg" alt="sorry we can't show you the image" />
+          <div class="overlay"></div>
+          <div class="description">
+            <h1>spring</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Provident dignissimos cumque omnis repellendus quisquam quidem,
+              consectetur necessitatibus eaque. Ratione, cum.
+            </p>
+          </div>
+        </div>
+        <div class="single-service">
+          <img src="./photo/pic2.jpg" alt="sorry we can't show you the image" />
+          <div class="overlay"></div>
+          <div class="description">
+            <h1>summer</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Provident dignissimos cumque omnis repellendus quisquam quidem,
+              consectetur necessitatibus eaque. Ratione, cum.
+            </p>
+          </div>
+        </div>
+        <div class="single-service">
+          <img src="./photo/pic3.jpg" alt="sorry we can't show you the image" />
+          <div class="overlay"></div>
+          <div class="description">
+            <h1>fall</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Provident dignissimos cumque omnis repellendus quisquam quidem,
+              consectetur necessitatibus eaque. Ratione, cum.
+            </p>
+          </div>
+        </div>
+        <div class="single-service">
+          <img src="./photo/pic4.jpg" alt="sorry we can't show you the image" />
+          <div class="overlay"></div>
+          <div class="description">
+            <h1>winter</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Provident dignissimos cumque omnis repellendus quisquam quidem,
+              consectetur necessitatibus eaque. Ratione, cum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- navigation -->
+
+    <section id="navigation">
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">FEATURES</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">RESERVATION</a></li>
+          <li><a href="#">MORE INFO</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="menu-but">
+      <img
+        id="menu-img"
+        src="./photo/menu.jpg"
+        alt="sorry we can't show you the image" />
+    </section>
+  </body>
+
+  <script>
+    var menuImg = document.getElementById("menu-img");
+    var menuBot = document.getElementById("menu-but");
+    var nvanigate = document.getElementById("navigation");
+
+    nvanigate.style.right = "-160px";
+    menuImg.onclick = function () {
+      if (nvanigate.style.right == "-160px") {
+        nvanigate.style.right = "0";
+        menuImg.src = "./photo/close.png";
+      } else {
+        nvanigate.style.right = "-160px";
+        menuImg.src = "./photo/menu.jpg";
+      }
+    };
+  </script>
+</html>
